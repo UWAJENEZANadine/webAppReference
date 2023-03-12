@@ -1,10 +1,18 @@
-import './App.css';
+import "./App.css";
+import NavBar from "./components/NavaBar";
+import Home from "./components/Home";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App bg-teal-200">
-     <h1>heloo</h1>
-    </div>
+    <>
+      <NavBar />
+
+      <Routes>
+      <Route path="" element={<Home/>} />
+        <Route path="/home" element={<Home/>} />
+      </Routes>
+    </>
   );
 }
 
