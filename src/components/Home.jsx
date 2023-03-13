@@ -63,9 +63,9 @@ const Home = () => {
           expedita labore dignissimos consequuntur blanditiis.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-1 p-10 ">
-        <div className=" pl-60">
-          <Card className=" w-full max-w-[26rem] shadow-lg ">
+      <div className="grid grid-cols-2 gap-1 p-10">
+        <div className="py-3 pl-60">
+          <Card className="border border-gray-700  w-full max-w-[26rem] shadow-lg">
             <CardHeader
               floated={false}
               color="blue-gray"
@@ -103,7 +103,7 @@ const Home = () => {
           </Card>
         </div>
         <div>
-          <Card className="w-full max-w-[26rem] shadow-lg">
+          <Card className="border border-gray-700 w-full max-w-[26rem] shadow-lg">
             <CardHeader floated={false} color="blue-gray">
               <img src={pic1} alt="ui/ux review check" />
               <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
@@ -266,9 +266,7 @@ const Home = () => {
         <h1 className="text-center text-3xl">OUR PARTNERS</h1>
       </div>
 
-      <div className="h-96 bg-gray-800">
-        <h1>footer</h1>
-      </div>
+      
     </>
   );
 };
