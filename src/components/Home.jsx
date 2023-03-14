@@ -14,12 +14,30 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 
+import { useState } from "react";
+
 const Home = () => {
+  const [showMore, setShowMore] = useState(false);
+  const paragraph = `
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+  deserunt harum, quasi reprehenderit aliquid corporis repellendus
+  iste sint animi ad. Molestiae voluptate incidunt voluptas ad
+  repudiandae voluptatem quidem. Ab, dolorum!
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+  deserunt harum, quasi reprehenderit aliquid corporis repellendus
+  iste sint animi ad. Molestiae voluptate incidunt voluptas ad
+  repudiandae voluptatem quidem. Ab, dolorum!
+
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+  deserunt harum, quasi reprehenderit aliquid corporis repellendus
+  iste sint animi ad. Molestiae voluptate incidunt voluptas ad
+  repudiandae voluptatem quidem. Ab, dolorum! 
+  `;
   return (
     <>
       <div className="home-container">
         <h2>Education & School</h2>
-        <h1>SHOWCASE COURSES, EVENTS AND MORE!</h1>
+        <h1 className="md:text-xs">SHOWCASE COURSES, EVENTS AND MORE!</h1>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure eos,
           est dolores quasi perspiciatis non omnis quaerat pariatur iusto alias
@@ -30,27 +48,20 @@ const Home = () => {
       </div>
       <div className="grid grid-cols-2 gap-36 pt-20 p-10 bg-red-50">
         <div>
-          <img src={pic} />
+          <img src="https://preview.colorlib.com/theme/universityedu/assets/img/gallery/about1.jpg.webp" />
         </div>
 
         <div>
           <h1 className="font-extrabold uppercase text-gray-700 text-3xl leading-15 mb-10">
             A COMPREHENSIVE TEACHING APPROACH
           </h1>
-          <p className="leading-10 text-2xl">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
-            deserunt harum, quasi reprehenderit aliquid corporis repellendus
-            iste sint animi ad. Molestiae voluptate incidunt voluptas ad
-            repudiandae voluptatem quidem. Ab, dolorum!
-          </p>
-          <p className="leading-10 text-2xl pt-8">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
-            deserunt harum, quasi reprehenderit aliquid corporis repellendus
-            iste sint animi ad. Molestiae voluptate incidunt voluptas ad
-            repudiandae voluptatem quidem. Ab, dolorum! <br />
-            <a href="#" className="text-[green] px-9 underline">
-              Learn More
-            </a>
+          <p>
+            {showMore ? paragraph : `${paragraph.substring(0, 120)}`}
+
+            <button className="btn-shows" onClick={() => setShowMore(!showMore)}>
+              {showMore ? "show less" : "show more"}
+             
+            </button>
           </p>
         </div>
       </div>
@@ -261,12 +272,10 @@ const Home = () => {
           </Card>
         </div>
       </div>
-      <hr/>
+      <hr />
       <div>
-        <h1 className="text-center text-3xl">OUR PARTNERS</h1>
+        <h1 className="text-center text-3xl pt-4 pb-4">OUR PARTNERS</h1>
       </div>
-
-      
     </>
   );
 };

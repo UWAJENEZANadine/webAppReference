@@ -38,4 +38,16 @@
   letter-spacing: 0.4rem;
   font-size: 1rem;
 }
+.btn-shows{
+  background-color: #007a5c;
+  padding: .5rem;
+  border-radius: 1px;
+  width: 25%;
+  letter-spacing: 0.4rem;
+  font-size: 1rem;
+  color: white;
+  margin-top: 1rem;
+
+
+}
 
