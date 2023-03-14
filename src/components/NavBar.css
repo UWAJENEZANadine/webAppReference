@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300&family=Poppins:wght@100;200;300&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,12 +10,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Archivo", sans-serif;
 }
+
 .Navbar-container-header {
   color: #00ac70;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
+  font-size: 1rem;
 }
 .Navbar-container-header-span {
   color: white;
@@ -23,18 +25,17 @@
 .second-header-list {
   font-family: "Poppins", sans-serif;
 }
-.second-header{
+.second-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  /* padding: 15px 0px;  */
   box-shadow: 2px 3px 3px gray;
-  margin-bottom: .5rem;
+  margin-bottom: 0.15rem;
 }
-.call-us h1{
+.call-us h1 {
   letter-spacing: 1.5rem;
   font-size: 1.4rem;
-
 }
 
 .second-header-list-one {
@@ -50,7 +51,6 @@
   margin-left: 1.2rem;
   font-family: "Poppins", sans-serif;
 }
-.icons{
+.icons {
   font-size: 2rem;
-  
 }
